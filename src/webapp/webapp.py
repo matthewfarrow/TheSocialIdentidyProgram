@@ -16,9 +16,10 @@ def start_flask(debug=True):
 def home_page():
     return render_template('index.html')
 
-
+#my compiler said there was an indentation error, and i dont know how to fix it so i just put a comment here so it can run --Epictitus
+'''
 @app.errorhandler(404)
-def not_found(e):
+def not_found(e):c
     path = request.path[1:]
     if '/../' not in path:
         if os.path.isfile('static' + request.path):
@@ -30,4 +31,4 @@ def not_found(e):
             return response
 
     return render_template("404.html"), 404
-
+'''
